@@ -50,17 +50,17 @@ class PgpUtilTest {
             "=wQI+\n" +
             "-----END PGP PRIVATE KEY BLOCK-----\n";
 
-    private final String passphrase ="123456";
+    private final String passphrase = "123456";
 
     @Test
-    void testDecrypt() {
+    void testEncrypt() {
         String testMessage = PgpUtil.encrypt("test message", this.publicKey);
 
         System.out.println(testMessage);
     }
 
     @Test
-    void testEncrypt() {
+    void testDecrypt() {
         String message = "-----BEGIN PGP MESSAGE-----\n" +
                 "Version: BCPG v1.77.00\n" +
                 "\n" +
