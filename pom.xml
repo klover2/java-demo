@@ -10,7 +10,7 @@
     <version>1.0.0</version>
 
     <modules>
-        <module>json-xml-demo</module>
+        <module>json-demo</module>
         <module>pgp-demo</module>
         <module>reflect-demo</module>
         <module>aws-demo</module>
