@@ -12,7 +12,7 @@
     <modules>
         <module>json-demo</module>
         <module>pgp-demo</module>
-        <module>reflect-demo</module>
+        <module>serialize-demo</module>
         <module>aws-demo</module>
     </modules>
 

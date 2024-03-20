@@ -9,12 +9,19 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>reflect-demo</artifactId>
+    <artifactId>serialize-demo</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.klover</groupId>
+            <artifactId>json-demo</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
