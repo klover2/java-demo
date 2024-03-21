@@ -14,27 +14,32 @@
         <module>pgp-demo</module>
         <module>serialize-demo</module>
         <module>aws-demo</module>
+        <module>swagger-demo</module>
     </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>3.2.1</spring-boot.version>
         <lombok.version>1.18.30</lombok.version>
+        <springdoc.version>2.3.0</springdoc.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Spring Boot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <version>3.1.5</version>
-                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

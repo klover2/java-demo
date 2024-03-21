@@ -1,0 +1,12 @@
+server:
+  port: 3002
+springdoc:
+  swagger-ui:
+    enabled: true
+  api-docs:
+    groups:
+      enabled: true
+  group-configs:
+    - group: admin
+      display-name: 管理后台
+      paths-to-match: /admin/**
