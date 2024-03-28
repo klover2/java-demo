@@ -5,21 +5,27 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.klover</groupId>
-        <artifactId>java-demo</artifactId>
+        <artifactId>aws-demo</artifactId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>aws-demo</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>cloud-watch-log-demo</module>
-        <module>s3-demo</module>
-    </modules>
+    <groupId>com.qbit</groupId>
+    <artifactId>s3-demo</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>s3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
