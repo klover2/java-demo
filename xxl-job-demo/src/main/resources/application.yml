@@ -5,7 +5,7 @@ xxl:
   job:
     # xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
     # 配置刚刚启动的xxl-job-admin地址，他会自动注册到xxl-job-admin
-    admin-addresses: http://127.0.0.1：8080/xxl-job-admin
+    admin-addresses: http://127.0.0.1:8080/xxl-job-admin
     # 执行器通讯TOKEN [选填]：非空时启用；
     access-token: sdfadfqaerqwrqewreqwrqxfg
     # 执行器AppName [选填]：执行器心跳注册分组依据；为空则关闭自动注册
