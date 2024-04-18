@@ -19,6 +19,7 @@ public class TestJob {
      */
     @XxlJob("testJobHandler")
     public String testJobHandler() {
+        // 获取xxl job 参数
         String param = XxlJobHelper.getJobParam();
         log.info("XXL-JOB, Hello World. param:{}", param);
         System.out.println(param);
